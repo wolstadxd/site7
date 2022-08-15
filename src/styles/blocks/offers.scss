@@ -1,0 +1,117 @@
+@import "../variables";
+@import "../core";
+
+.section__offers {
+  margin: 75px 0;
+  @media (max-width: 1050px) {
+    margin-top: 20px;
+  }
+}
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-top: 20px;
+  justify-content: center;
+  @media (max-width: 768px) {
+    gap: 0;
+  }
+  &__item {
+    flex: 0 1 300px;
+    margin-top: 30px;
+    border: 1px solid #e0e5e2;
+    @media (max-width: 768px) {
+      flex: 0 1 100%;
+      margin-top: 20px;
+    }
+  }
+}
+.offer {
+  &__body {
+  padding: 15px;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 100%;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: black;
+    margin-top: 15px;
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    background: $neutralLite;
+    width: 60px;
+    height: 60px;
+    justify-content: flex-end;
+    margin-left: auto;
+    transition: .3s ease;
+    &:hover {
+      width: 100%;
+      .offer__btn-text {
+        display: block;
+      }
+      .offer__arrow {
+        transform: rotate(45deg);
+        transition: .3s transform;
+      }
+    }
+  }
+  &__img {
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__btn-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    display: none;
+    animation: fade .9s linear;
+  }
+  &__btn-img {
+
+  }
+  &__arrow {
+    transition: .3s transform;
+    transform: rotate(0deg);
+  }
+}
+
+.offers__text {
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}

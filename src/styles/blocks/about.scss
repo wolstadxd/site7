@@ -1,0 +1,52 @@
+@import "../variables";
+@import "../core";
+
+.section__about {
+  background: $primary;
+  padding: 80px 0;
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 30px;
+  @media (max-width: 992px) {
+    margin-top: 0;
+  }
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  &__item {
+    flex: 0 1 380px;
+    background: white;
+    padding: 35px;
+    margin-top: 30px;
+    border-top: 6px solid $secondary;
+    @media (max-width: 992px) {
+      padding: 25px;
+    }
+    @media (max-width: 768px) {
+      flex: 0 1 100%;
+      margin-top: 20px;
+    }
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $primaryDark;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: black;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,54 @@
+@import "../variables";
+@import "../core";
+
+.section {
+  &__whoo {
+    padding-top: 220px;
+    padding-bottom: 170px;
+    display: flex;
+    position: relative;
+    @media (max-width: 1450px) {
+      padding: 100px 0;
+    }
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+}
+.whoo__img {
+  position: absolute;
+  top: -75px;
+  right: 0;
+  z-index: -1;
+  @media (max-width: 1450px) {
+    max-width: 500px;
+    top: 0;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.whoo {
+  display: flex;
+  &__item {
+    flex: 0 1 50%;
+    padding: 200px 0;
+    @media (max-width: 1450px) {
+      padding: 100px 0;
+    }
+    @media (max-width: 768px) {
+      padding: 50px 0 25px 0;
+      flex: 0 1 100%;
+    }
+  }
+}
+
+.whoo__img-mob {
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}

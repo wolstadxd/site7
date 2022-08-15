@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../core";
+
+.section {
+  &__vision {
+    background: $primary;
+    padding: 80px 0;
+    @media (max-width: 768px) {
+      padding: 50px 0;
+    }
+  }
+}

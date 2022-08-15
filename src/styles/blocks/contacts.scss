@@ -1,0 +1,92 @@
+@import "../variables";
+@import "../core";
+
+.section__contacts {
+  padding: 204px 0;
+  background: url("../../../dist/img/contacts_bg.jpg") center / cover no-repeat;
+  @media (max-width: 1450px) {
+    padding: 125px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+}
+
+.contacts {
+  max-width: 650px;
+  margin: 0 auto;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: white;
+    @media (max-width: 768px) {
+      line-height: 1.2;
+      font-size: 24px;
+    }
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-top: 19px;
+    color: #FFFFFF;
+  }
+}
+.form {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  margin-top: 30px;
+  @media (max-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__input {
+    display: flex;
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #D3DAD7;
+    @media (max-width: 480px) {
+      font-size: 14px;
+      line-height: 1;
+      padding: 14px 16px;
+    }
+    &:focus {
+      outline: 1px solid $primary;
+    }
+  }
+}
+.contacts__btn {
+  padding: 15px 30px;
+  border: none;
+  background: $secondary;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary;
+  }
+}
+

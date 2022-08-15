@@ -1,0 +1,79 @@
+@import "../variables";
+@import "../core";
+
+footer {
+  display: flex;
+  background: $primary;
+  padding: 45px 0 35px 0;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.container__footer {
+  display: flex;
+  gap: 85px;
+  margin-left: 60px;
+}
+.footer__item {
+  margin-top: 70px;
+  margin-bottom: 35px;
+}
+.footer {
+  display: flex;
+  gap: 85px;
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+  }
+}
+
+.footer__list {
+  margin-top: 20px;
+}
+.footer {
+  &__list-item {
+    margin-top: 9px;
+    &.language__item {
+      margin-top: 42px;
+    }
+  }
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #B0BDB7;
+    text-decoration: none;
+    transition: .3s color;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.copy {
+  display: flex;
+  margin-left: 60px;
+  gap: 8px;
+  margin-bottom: 70px;
+  //border-top: 1px solid rgb(211, 215, 218, 0.5);
+}
+.footer__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #D3DAD7;
+}
+.footer__img {
+  display: flex;
+  gap: 10px;
+  margin-left: 500px;
+  flex-wrap: wrap;
+}

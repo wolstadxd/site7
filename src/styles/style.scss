@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/statistic";
+@import "blocks/offers";
+@import "blocks/vision";
+@import "blocks/whoo";
+@import "blocks/about";
+@import "blocks/why";
+@import "blocks/benefits";
+@import "blocks/action";
+@import "blocks/team";
+@import "blocks/contacts";
+@import "blocks/footer";
+
+
+//Libs
+@import "./libs/swiper";
